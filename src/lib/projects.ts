@@ -47,6 +47,15 @@ export const PROJECTS = [
     link: "https://www.ygeometric.com/",
     tags: ["Typescript", "Next.js", "Vercel"],
   },
+  {
+    title: "Yu-Gi-Oh! War League Analysis",
+    description:
+      "Data pipelines to collect, process, and analyze Goat Format War League (GFWL) data.",
+    href: "/projects/gfwl-analysis",
+    image: "/gfwl-analysis.png",
+    github: "https://github.com/nedhmn/gfwl-analysis",
+    tags: ["Python", "Pandas", "Polars", "SQL", "AWS"],
+  },
 ];
 
 export type ProjectType = (typeof PROJECTS)[number];

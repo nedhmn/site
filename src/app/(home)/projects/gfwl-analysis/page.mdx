@@ -1,0 +1,44 @@
+import { BackPage } from "@/components/back-page";
+import { PROJECTS } from "@/lib/projects";
+import { ProjectHero } from "@/components/project-hero";
+
+export const project = PROJECTS.find(
+  (p) => p.title === "Yu-Gi-Oh! War League Analysis",
+);
+
+<BackPage href="/projects" content="back to projects" />
+
+<ProjectHero project={project} />
+
+## 📄 Project Details
+
+This project is pending a rewrite...
+
+## ✨ Features
+
+- **Multi-Source Data Ingestion:** Gathers unstructured league data from Excel and Discord.
+- **Web Scraping:** Scrapes replay and deck data using BrightData, saving JSON to AWS S3.
+- **Deck Type Calculation:** An **XGBoost model** helps predict deck types based on card names.
+- **Model Demonstration:** Notebooks to show deck type classification model performance.
+- **Replay Parsing:** Transforms raw replay JSON into tabular Yu-Gi-Oh! data.
+- **Data Storage:** Stores all processed data in a SQLite database.
+- **Data Analysis:** Jupyter notebooks for analyzing league and replay data.
+
+## 🛠️ Technologies
+
+- **Python:** Core programming language.
+- **Pandas:** Data manipulation and analysis.
+- **Polars:** DataFrame library for fast data processing.
+- **Plotnine:** Data visualization library based on ggplot2.
+- **scikit-learn:** Machine learning library for data analysis.
+- **Jupyter:** Interactive notebooks for data exploration.
+- **SQLite3:** Relational database for data storage.
+- **SQLAlchemy:** ORM for database interaction.
+- **Docker/Docker Compose:** Containerization and orchestration.
+- **AWS S3:** Object storage for archived replay JSON.
+- **BrightData:** Web scraping service for data collection.
+
+## ⚙️ Tooling
+
+- **uv:** Fast package manager.
+- **ruff:** Linter and formatter.
