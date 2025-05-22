@@ -1,14 +1,14 @@
-import type { ProjectType } from '@/lib/projects'
-import Image from 'next/image'
+import type { ProjectType } from "@/lib/projects";
+import Image from "next/image";
 
 interface ProjectCardProps {
-  project: ProjectType
+  project: ProjectType;
 }
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <div className="h-full overflow-hidden rounded-lg border border-gray-200 transition-colors hover:border-gray-400 dark:border-zinc-800 dark:hover:border-zinc-600">
-      <div className="relative h-48 bg-gray-100 dark:bg-zinc-900">
+    <div className="flex flex-col sm:flex-row overflow-hidden rounded-lg border border-gray-200 transition-colors hover:border-gray-400 dark:border-zinc-800 dark:hover:border-zinc-600">
+      <div className="sm:w-1/3 relative h-40 bg-gray-100 dark:bg-zinc-900">
         <Image
           src={project.image}
           alt={project.title}
@@ -17,7 +17,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           className="h-full w-full object-cover opacity-80 transition-opacity hover:opacity-100"
         />
       </div>
-      <div className="p-4">
+      <div className="p-4 sm:w-2/3 flex flex-col justify-between">
         <h3 className="mb-2 font-medium text-gray-800 dark:text-zinc-200">
           {project.title}
         </h3>
@@ -36,7 +36,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;
