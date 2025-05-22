@@ -1,7 +1,7 @@
-import { ProjectCard } from "@/components/project-card";
-import { PROJECTS } from "@/lib/projects";
-import Link from "next/link";
-import { BackPage } from "@/components/back-page";
+import { BackPage } from '@/components/back-page'
+import { ProjectCard } from '@/components/project-card'
+import { PROJECTS } from '@/lib/projects'
+import Link from 'next/link'
 
 const Page = () => {
   return (
@@ -9,8 +9,8 @@ const Page = () => {
       <BackPage href="/" content="back home" />
 
       {/* Header */}
-      <h1 className="font-medium mt-8 mb-3">Projects</h1>
-      <p className="text-gray-800 dark:text-zinc-300 mt-5 leading-snug">
+      <h1 className="mt-8 mb-3 font-medium">Projects</h1>
+      <p className="mt-5 leading-snug text-gray-800 dark:text-zinc-300">
         A collection of my open-source projects.
       </p>
 
@@ -23,7 +23,7 @@ const Page = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Page;
+export default Page

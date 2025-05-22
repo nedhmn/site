@@ -1,10 +1,10 @@
-import type { ProjectType } from "@/lib/projects";
-import Image from "next/image";
+import type { ProjectType } from '@/lib/projects'
+import Image from 'next/image'
 
 export const ProjectCard = ({ project }: { project: ProjectType }) => {
   return (
-    <div className="flex flex-col sm:flex-row overflow-hidden rounded-lg border border-gray-200 transition-colors hover:border-gray-400 dark:border-zinc-800 dark:hover:border-zinc-600">
-      <div className="sm:w-1/3 relative h-35 bg-gray-100 dark:bg-zinc-900">
+    <div className="flex flex-col overflow-hidden rounded-lg border border-gray-200 transition-colors hover:border-gray-400 sm:flex-row dark:border-zinc-800 dark:hover:border-zinc-600">
+      <div className="relative h-35 bg-gray-100 sm:w-1/3 dark:bg-zinc-900">
         <Image
           src={project.image}
           alt={project.title}
@@ -13,11 +13,11 @@ export const ProjectCard = ({ project }: { project: ProjectType }) => {
           className="h-full w-full object-cover opacity-80 transition-opacity hover:opacity-100"
         />
       </div>
-      <div className="p-4 sm:w-2/3 flex flex-col justify-between">
+      <div className="flex flex-col justify-between p-4 sm:w-2/3">
         <h3 className="mb-2 font-medium text-gray-800 dark:text-zinc-200">
           {project.title}
         </h3>
-        <p className="mb-3 text-sm text-gray-600 dark:text-zinc-400 leading-snug">
+        <p className="mb-3 text-sm leading-snug text-gray-600 dark:text-zinc-400">
           {project.description}
         </p>
         <div className="flex flex-wrap gap-2">
@@ -32,5 +32,5 @@ export const ProjectCard = ({ project }: { project: ProjectType }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

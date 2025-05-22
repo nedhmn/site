@@ -1,4 +1,4 @@
-import { BackPage } from "@/components/back-page";
+import { BackPage } from '@/components/back-page'
 
 const Page = () => {
   return (
@@ -6,7 +6,7 @@ const Page = () => {
       <BackPage href="/" content="back home" />
       Coming soon...
     </div>
-  );
-};
+  )
+}
 
-export default Page;
+export default Page

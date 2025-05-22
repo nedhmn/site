@@ -1,7 +1,7 @@
-import { ProjectCard } from "@/components/project-card";
-import { PROJECTS } from "@/lib/projects";
-import { ArrowRight } from "lucide-react";
-import Link from "next/link";
+import { ProjectCard } from '@/components/project-card'
+import { PROJECTS } from '@/lib/projects'
+import { ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 
 const Page = () => {
   return (
@@ -23,7 +23,7 @@ const Page = () => {
       {/* Recent Projects */}
       <section className="mt-10">
         <div className="flex items-center justify-between">
-          <h2>Recent Projects</h2>{" "}
+          <h2>Recent Projects</h2>{' '}
           <Link
             href="/projects"
             className="flex items-center gap-1 text-gray-400 transition-colors duration-200 hover:text-blue-500 dark:text-gray-500"
@@ -40,7 +40,7 @@ const Page = () => {
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default Page;
+export default Page
