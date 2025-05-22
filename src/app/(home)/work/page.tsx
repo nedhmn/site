@@ -1,5 +1,12 @@
+import { BackPage } from "@/components/back-page";
+
 const Page = () => {
-  return <div></div>;
+  return (
+    <div>
+      <BackPage href="/" content="back home" />
+      Coming soon...
+    </div>
+  );
 };
 
 export default Page;

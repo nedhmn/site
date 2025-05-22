@@ -5,10 +5,10 @@ interface ProjectCardProps {
   project: ProjectType;
 }
 
-const ProjectCard = ({ project }: ProjectCardProps) => {
+export const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <div className="flex flex-col sm:flex-row overflow-hidden rounded-lg border border-gray-200 transition-colors hover:border-gray-400 dark:border-zinc-800 dark:hover:border-zinc-600">
-      <div className="sm:w-1/3 relative h-40 bg-gray-100 dark:bg-zinc-900">
+      <div className="sm:w-1/3 relative h-35 bg-gray-100 dark:bg-zinc-900">
         <Image
           src={project.image}
           alt={project.title}
@@ -21,7 +21,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         <h3 className="mb-2 font-medium text-gray-800 dark:text-zinc-200">
           {project.title}
         </h3>
-        <p className="mb-3 text-sm text-gray-600 dark:text-zinc-400">
+        <p className="mb-3 text-sm text-gray-600 dark:text-zinc-400 leading-snug">
           {project.description}
         </p>
         <div className="flex flex-wrap gap-2">
@@ -38,5 +38,3 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
     </div>
   );
 };
-
-export default ProjectCard;

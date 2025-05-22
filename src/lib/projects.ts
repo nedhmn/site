@@ -9,7 +9,7 @@ export const PROJECTS = [
   },
   {
     title: "Yu-Gi-Oh! Discord Bot",
-    description: "Discord bot for Yu-Gi-Oh! event submissions",
+    description: "Discord bot for Yu-Gi-Oh! event submissions.",
     href: "/projects/ygo-war-league-discord-bot",
     image: "/ygo-war-league-discord-bot.png",
     github: "https://github.com/nedhmn/ygo-war-league-discord-bot",

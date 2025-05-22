@@ -1,4 +1,4 @@
-import ProjectCard from "@/components/project-card";
+import { ProjectCard } from "@/components/project-card";
 import { PROJECTS } from "@/lib/projects";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
@@ -14,8 +14,8 @@ const Page = () => {
         </p>
         <p className="mt-3 leading-snug">
           {`My early startup roles
-        allowed me to wear many hats in fast-paced environments, leveraging great
-        mentors across full-stack web development, data engineering, and team
+        allowed me to wear many hats in fast-paced environments, leveraging Senior
+        Engineers across full-stack web development, data engineering, and team
         leadership.`}
         </p>
       </section>
