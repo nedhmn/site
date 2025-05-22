@@ -1,0 +1,67 @@
+import { BackPage } from "@/components/back-page";
+import { PROJECTS } from "@/lib/projects";
+import { ProjectHero } from "@/components/project-hero";
+
+export const project = PROJECTS.find((p) => p.title === "StreetEasy Scraper");
+
+<BackPage href="/projects" content="back to projects" />
+
+<ProjectHero project={project} />
+
+## ✨ Inspiration
+
+I was chatting with a friend that works in real estate and they mentioned how they were manually going over thousands of listings on StreetEasy for his work. That's insane! I decided to build a pipeline to scrape, transform, and load the data into a CSV file for him to use instead.
+
+Admittedly, this was a bit more involved than I expected because:
+
+- StreetEasy has a lot of anti-scraping measures in place, like CAPTCHAs.
+- The addresses that my friend goes over are not always the same as the ones listed on StreetEasy, so I had to do some fuzzy matching to get the right addresses.
+- My friend isn't tech-savvy and he didn't want this to run in the cloud, so I dockerized the script and built an executable for him to run locally.
+
+## 📄 Project Details
+
+To bypass CAPTCHA, I had to use BrightData's [Web Unlocker](https://brightdata.com/products/web-unlocker). This service has two approaches, [synchronous or asynchronous](https://docs.brightdata.com/scraping-automation/serp-api/asynchronous-requests#async-vs-sync-requests) web scraping. The difference between the two is that the asynchronous approach involves a **lot** more infra, and to set this up seeminglessly for my non-tech friend was a bit of a challenge.
+
+Originally, I built the `synchronous` approach, but it had it's cons:
+
+- It took between 15-20 minutes to scrape ~5k addresses.
+- It had a success rate of about 80%.
+- I had a retry mechanism that would retry on failure, which costed more money per request.
+
+That's when I decided to build the `asynchronous` approach. Instead of simply scraping the URLs that I wanted, the difference with this approach is:
+
+1. You send URLs to BrightData's Web Unlocker, which returns a job ID.
+2. Upon completing the scrape, BrightData sends a POST request to your webhook containing the job's status, requiring you to update the job's status in your database.
+3. A background worker continuously monitors database job statuses, fetches data for ready jobs from BrightData, processes and saves the results, and then marks the job as "completed" or "failed."
+
+That's quite a bit of work to set up seeminglessly on my friend's local computer, but the pros were worth it:
+
+- It now takes about 5-10 minutes to scrape ~5k addresses.
+- It has a success rate of 99.9%.
+- You are only charged for successful requests.
+
+## 🚀 Features
+
+- **Flexible Scraping:** Supports both **synchronous** (multi-threaded) and **asynchronous** (BrightData callbacks) methods.
+- **Secure Webhook:** **Cloudflared tunnels** expose the webhook safely without direct network exposure.
+- **Enhanced Security:** Options for **Cloudflare IP whitelisting and SSL/TLS encryption** for the webhook.
+- **Robust Data:** Stores addresses and scraped data in **PostgreSQL**.
+- **Simplified Deployment:** Easily deploy with **Docker Compose** (synchronous/asynchronous profiles).
+- **Astro Starlight:** Documentation framework.
+
+## 🛠️ Technologies
+
+- **Python:** Core programming language.
+- **PostgreSQL:** Relational database for data storage.
+- **SQLAlchemy:** ORM for database interaction.
+- **Docker/Docker Compose:** Containerization and orchestration.
+- **Cloudflared Tunnels:** Secure public exposure of local services.
+- **FastAPI:** Framework for the webhook API.
+- **Pandas:** Data manipulation and analysis.
+
+## ⚙️ Tooling
+
+- **uv:** Fast package manager.
+- **Monorepo (uv workspaces):** Manages multiple projects.
+- **mypy:** Static type checker.
+- **ruff:** Linter and formatter.
