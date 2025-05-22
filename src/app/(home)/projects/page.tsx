@@ -1,7 +1,7 @@
-import { BackPage } from '@/components/back-page'
-import { ProjectCard } from '@/components/project-card'
-import { PROJECTS } from '@/lib/projects'
-import Link from 'next/link'
+import { BackPage } from "@/components/back-page";
+import { ProjectCard } from "@/components/project-card";
+import { PROJECTS } from "@/lib/projects";
+import Link from "next/link";
 
 const Page = () => {
   return (
@@ -16,14 +16,14 @@ const Page = () => {
 
       {/* Projects */}
       <div className="mt-5 flex flex-col gap-6">
-        {PROJECTS.slice(0, 3).map((project) => (
+        {PROJECTS.map((project) => (
           <Link key={project.title} href={project.href}>
             <ProjectCard project={project} />
           </Link>
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;

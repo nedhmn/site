@@ -1,0 +1,40 @@
+import { BackPage } from "@/components/back-page";
+import { PROJECTS } from "@/lib/projects";
+import { ProjectHero } from "@/components/project-hero";
+
+export const project = PROJECTS.find(
+  (p) => p.title === "Yu-Gi-Oh! Card Image Hosting",
+);
+
+<BackPage href="/projects" content="back to projects" />
+
+<ProjectHero project={project} />
+
+## ✨ Inspiration
+
+One of the requirements for my [Yu-Gi-Oh! Discord Bot](/projects/ygo-war-league-discord-bot) is for the user to have a source of images for the deck previews.
+
+The admin currently hosting this bot on their server wanted to migrate from hosting images on his own server to a separate service. Considering that timing, and my curiousity to use Terraform in a project, I decided to create this project to automate the scrape, archive, and hosting of Yu-GI-Oh! card images using AWS S3 and CloudFront.
+
+## 🚀 Features
+
+- **Automated AWS Infrastructure:** Sets up AWS S3 for storage and CloudFront for content delivery using **Terraform**.
+- **Configurable Downloads:** Allows users to customize which card images are downloaded based on **date ranges** and image **sizes**.
+- **Dockerized:** Simplified self-hosting with Docker.
+- **Astro Starlight:** Documentation framework.
+
+## 🛠️ Technologies
+
+- **Python:** Core programming language.
+- **SQLite3:** Relational database for data storage.
+- **SQLAlchemy:** ORM for database interaction.
+- **Docker/Docker Compose:** Containerization and orchestration.
+- **Terraform:** Infrastructure as Code for cloud provisioning.
+- **AWS S3:** Object storage for archived images.
+- **AWS CloudFront:** Content Delivery Network (CDN) for fast image delivery.
+
+## ⚙️ Tooling
+
+- **uv:** Fast package manager.
+- **mypy:** Static type checker.
+- **ruff:** Linter and formatter.
