@@ -1,7 +1,7 @@
-import { ProjectType } from "@/lib/projects";
-import { SiGithub } from "@icons-pack/react-simple-icons";
-import { ExternalLink } from "lucide-react";
-import Image from "next/image";
+import { ProjectType } from '@/lib/projects'
+import { SiGithub } from '@icons-pack/react-simple-icons'
+import { ExternalLink } from 'lucide-react'
+import Image from 'next/image'
 
 export const ProjectHero = ({ project }: { project: ProjectType }) => {
   return (
@@ -19,7 +19,7 @@ export const ProjectHero = ({ project }: { project: ProjectType }) => {
         {project.tags.map((tag) => (
           <span
             key={tag}
-            className="rounded-full bg-gray-800 px-3 py-1 text-sm"
+            className="rounded-full bg-gray-200 px-3 py-1 text-sm text-gray-700 dark:bg-zinc-700 dark:text-zinc-300"
           >
             {tag}
           </span>
@@ -44,7 +44,7 @@ export const ProjectHero = ({ project }: { project: ProjectType }) => {
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-md bg-gray-800 px-4 py-2 text-sm transition-colors hover:bg-gray-700"
+            className="flex items-center gap-2 rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-700 transition-colors dark:bg-zinc-700 dark:text-zinc-300"
           >
             <SiGithub size={18} />
             view on github
@@ -55,7 +55,7 @@ export const ProjectHero = ({ project }: { project: ProjectType }) => {
             href={project.docs}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-md bg-gray-800 px-4 py-2 text-sm transition-colors hover:bg-gray-700"
+            className="flex items-center gap-2 rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-700 transition-colors dark:bg-zinc-700 dark:text-zinc-300"
           >
             <ExternalLink size={18} />
             visit docs
@@ -66,7 +66,7 @@ export const ProjectHero = ({ project }: { project: ProjectType }) => {
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-md bg-gray-800 px-4 py-2 text-sm transition-colors hover:bg-gray-700"
+            className="flex items-center gap-2 rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-700 transition-colors dark:bg-zinc-700 dark:text-zinc-300"
           >
             <ExternalLink size={18} />
             visit website
@@ -74,5 +74,5 @@ export const ProjectHero = ({ project }: { project: ProjectType }) => {
         )}
       </div>
     </>
-  );
-};
+  )
+}

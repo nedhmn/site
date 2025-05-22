@@ -1,7 +1,7 @@
-import { BackPage } from "@/components/back-page";
-import { ProjectCard } from "@/components/project-card";
-import { PROJECTS } from "@/lib/projects";
-import Link from "next/link";
+import { BackPage } from '@/components/back-page'
+import { ProjectCard } from '@/components/project-card'
+import { PROJECTS } from '@/lib/projects'
+import Link from 'next/link'
 
 const Page = () => {
   return (
@@ -23,7 +23,7 @@ const Page = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Page;
+export default Page
