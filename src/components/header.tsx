@@ -1,10 +1,10 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 const PAGES = [
-  { name: "Ned Hermann", path: "/" },
-  { name: "blogs", path: "/blogs" },
-  { name: "projects", path: "/projects" },
-];
+  { name: 'Ned Hermann', path: '/' },
+  { name: 'blogs', path: '/blogs' },
+  { name: 'projects', path: '/projects' },
+]
 
 export const Header = () => {
   return (
@@ -29,5 +29,5 @@ export const Header = () => {
         ))}
       </div>
     </header>
-  );
-};
+  )
+}

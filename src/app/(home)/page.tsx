@@ -1,7 +1,7 @@
-import { ArrowRight } from "lucide-react";
-import Link from "next/link";
-import { PROJECTS } from "@/lib/projects";
-import ProjectCard from "@/components/project-card";
+import ProjectCard from '@/components/project-card'
+import { PROJECTS } from '@/lib/projects'
+import { ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 
 const Page = () => {
   return (
@@ -22,8 +22,8 @@ const Page = () => {
 
       {/* Recent Projects */}
       <section className="mt-10">
-        <div className="flex justify-between items-center">
-          <h2>Recent Projects</h2>{" "}
+        <div className="flex items-center justify-between">
+          <h2>Recent Projects</h2>{' '}
           <Link
             href="/projects"
             className="flex items-center gap-1 text-gray-400 transition-colors duration-200 hover:text-blue-500 dark:text-gray-500"
@@ -31,7 +31,7 @@ const Page = () => {
             view all <ArrowRight size={16} />
           </Link>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-5">
+        <div className="mt-5 grid grid-cols-1 gap-6 md:grid-cols-3">
           {PROJECTS.slice(0, 3).map((project) => (
             <Link key={project.title} href={project.href}>
               <ProjectCard project={project} />
@@ -40,7 +40,7 @@ const Page = () => {
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default Page;
+export default Page
