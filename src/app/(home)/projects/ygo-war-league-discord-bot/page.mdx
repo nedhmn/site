@@ -1,0 +1,43 @@
+import { BackPage } from "@/components/back-page";
+import { PROJECTS } from "@/lib/projects";
+import { ProjectHero } from "@/components/project-hero";
+
+export const project = PROJECTS.find(
+  (p) => p.title === "Yu-Gi-Oh! Discord Bot",
+);
+
+<BackPage href="/projects" content="back to projects" />
+
+<ProjectHero project={project} />
+
+## ✨ Inspiration
+
+A Yu-Gi-Oh! Discord server was trying to create a war league for their community. It was in high demand from both members and admins to have a bot that can handle deck submissions and validation.
+
+I offered to help them out and build out some low-hanging fruit features and was able to get it up and running before the first season in a span of a couple of days.
+
+## 🚀 Features
+
+- **Deck Submission:** Captains submit/update decks via Discord commands.
+- **YDK Validation:** Ensures `.ydk` files match DuelingBook format.
+- **Admin Controls:** Commands for league setup, submission management, and data viewing.
+- **Automated Deck Images:** Generates deck image previews ([PIL](https://github.com/python-pillow/Pillow)).
+- **Local Storage:** Stores submissions and images locally (SQLite3 & file system).
+- **Multi-Season/Week Support:** Manages league events across seasons/weeks.
+- **Dockerized:** Simplified self-hosting with Docker.
+
+## 🛠️ Technologies
+
+- **Python:** Primary programming language.
+- **discord.py:** Discord API wrapper for bot functionality.
+- **PIL (Pillow):** Image processing for deck previews.
+- **SQL/SQLAlchemy:** Database interaction and ORM.
+- **Docker:** Containerization for deployment.
+- **Astro Starlight:** Documentation framework.
+
+## ⚙️ Tooling
+
+- **uv:** Fast package manager.
+- **Monorepo (uv workspaces):** Manages multiple projects.
+- **mypy:** Static type checker.
+- **ruff:** Linter and formatter.

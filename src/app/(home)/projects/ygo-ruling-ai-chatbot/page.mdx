@@ -1,8 +1,8 @@
-import { BackPage } from '@/components/back-page'
-import { PROJECTS } from '@/lib/projects'
-import { ProjectHero } from '@/components/project-hero'
+import { BackPage } from "@/components/back-page";
+import { PROJECTS } from "@/lib/projects";
+import { ProjectHero } from "@/components/project-hero";
 
-export const project = PROJECTS.find((p) => p.title === 'Yu-Gi-Oh! AI Chatbot')
+export const project = PROJECTS.find((p) => p.title === "Yu-Gi-Oh! AI Chatbot");
 
 <BackPage href="/projects" content="back to projects" />
 
@@ -12,7 +12,7 @@ export const project = PROJECTS.find((p) => p.title === 'Yu-Gi-Oh! AI Chatbot')
 
 A monorepo for a Yu-Gi-Oh! ruling AI chatbot focused on [Goat Format](https://www.goatformat.com/whatisgoat.html), built with Turborepo. It leverages AI RAG with OpenAI embeddings and Pinecone for a vector database.
 
-## ✨ Features
+## 🚀 Features
 
 - **Accurate Ruling Responses:** Provides precise answers for Yu-Gi-Oh! Goat Format rulings using a [RAG](https://www.pinecone.io/learn/retrieval-augmented-generation/) approach.
 - **AI-Powered Chatbot:** Combine AI reasoning and relevant context for comprehensive answers.
@@ -25,9 +25,13 @@ A monorepo for a Yu-Gi-Oh! ruling AI chatbot focused on [Goat Format](https://ww
 - **Pinecone:** Vector database for ruling embeddings.
 - **Tailwind CSS:** Utility-first CSS.
 - **shadcn/ui:** Reusable UI components.
-- **Turborepo:** Monorepo management.
-- **ESLint & Prettier:** Code linting and formatting.
 - **Cheerio:** Web scraping library for server-side jQuery.
 - **Nextra:** Documentation framework.
 - **Docker/docker-compose:** Containerization.
 - **TypeScript:** For type safety.
+
+## ⚙️ Tooling
+
+- **Turborepo:** Monorepo management.
+- **ESLint:** Code linting.
+- **Prettier:** Code formatting.
