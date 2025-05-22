@@ -1,15 +1,15 @@
-import { Metadata } from "next";
+import { Metadata } from 'next'
 
 export const createMetadata = (): Metadata => {
   return {
-    metadataBase: new URL("https://nedhmn.com"),
+    metadataBase: new URL('https://nedhmn.com'),
     alternates: {
-      canonical: "/",
+      canonical: '/',
     },
     title: {
-      default: "Ned Hermann",
-      template: "%s | Ned Hermann",
+      default: 'Ned Hermann',
+      template: '%s | Ned Hermann',
     },
-    description: "Software Engineer.",
-  };
-};
+    description: 'Software Engineer.',
+  }
+}

@@ -1,8 +1,8 @@
 const LINKS = [
-  { name: "@nedhmn", url: "https://x.com/nedhmn" },
-  { name: "linkedin", url: "https://www.linkedin.com/in/ned-hermann" },
-  { name: "github", url: "https://github.com/nedhmn" },
-];
+  { name: '@nedhmn', url: 'https://x.com/nedhmn' },
+  { name: 'linkedin', url: 'https://www.linkedin.com/in/ned-hermann' },
+  { name: 'github', url: 'https://github.com/nedhmn' },
+]
 
 export const Footer = () => {
   return (
@@ -14,12 +14,12 @@ export const Footer = () => {
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 dark:text-gray-500 hover:text-blue-500 transition-colors duration-200"
+            className="text-gray-400 transition-colors duration-200 hover:text-blue-500 dark:text-gray-500"
           >
             {link.name}
           </a>
         ))}
       </div>
     </footer>
-  );
-};
+  )
+}
