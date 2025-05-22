@@ -1,11 +1,7 @@
 import type { ProjectType } from "@/lib/projects";
 import Image from "next/image";
 
-interface ProjectCardProps {
-  project: ProjectType;
-}
-
-export const ProjectCard = ({ project }: ProjectCardProps) => {
+export const ProjectCard = ({ project }: { project: ProjectType }) => {
   return (
     <div className="flex flex-col sm:flex-row overflow-hidden rounded-lg border border-gray-200 transition-colors hover:border-gray-400 dark:border-zinc-800 dark:hover:border-zinc-600">
       <div className="sm:w-1/3 relative h-35 bg-gray-100 dark:bg-zinc-900">

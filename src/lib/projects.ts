@@ -5,6 +5,7 @@ export const PROJECTS = [
     href: "/projects/ygo-ruling-ai-chatbot",
     image: "/ygo-ai-chatbot.png",
     github: "https://github.com/nedhmn/ygo-ruling-ai-chatbot",
+    link: "https://nedhmn.github.io/ygo-ruling-ai-chatbot/",
     tags: ["Typescript", "Next.js", "AI RAG", "OpenAI", "Pinecone"],
   },
   {
@@ -13,6 +14,7 @@ export const PROJECTS = [
     href: "/projects/ygo-war-league-discord-bot",
     image: "/ygo-war-league-discord-bot.png",
     github: "https://github.com/nedhmn/ygo-war-league-discord-bot",
+    link: "https://nedhmn.github.io/ygo-war-league-discord-bot/",
     tags: ["Python", "discord.py", "PIL", "SQL"],
   },
   {
@@ -22,6 +24,7 @@ export const PROJECTS = [
     href: "/projects/streeteasy-scraper",
     image: "/streeteasy-scraper.png",
     github: "https://github.com/nedhmn/streeteasy-scraper",
+    link: "https://nedhmn.github.io/streeteasy-scraper/",
     tags: ["Python", "FastAPI", "BrightData", "Cloudflare", "SQL"],
   },
 ];
