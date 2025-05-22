@@ -1,0 +1,27 @@
+import { BackPage } from "@/components/back-page";
+import { PROJECTS } from "@/lib/projects";
+import { ProjectHero } from "@/components/project-hero";
+
+export const project = PROJECTS.find((p) => p.title === "ygeometric");
+
+<BackPage href="/projects" content="back to projects" />
+
+<ProjectHero project={project} />
+
+## ✨ Inspiration
+
+This website is a modern clone of [yugioh.party](https://web.archive.org/web/20250118113809/https://www.yugioh.party/), a hypergeometric calculator for Yu-Gi-Oh! card games.
+
+It was inspired by the original website, which is no longer available. It was a very popular tool for players, including myself. The demand for a clone was high once the original got taken down, so I decided to create a modern version of it.
+
+## 🛠️ Technologies
+
+- **Next.js:** React framework for the chatbot.
+- **Tailwind CSS:** Utility-first CSS.
+- **shadcn/ui:** Reusable UI components.
+- **TypeScript:** For type safety.
+- **Vercel:** Hosting platform for the website.
+
+## ⚙️ Tooling
+
+- **ESLint:** Code linting.

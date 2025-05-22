@@ -1,7 +1,7 @@
-import { ProjectType } from '@/lib/projects'
-import { SiGithub } from '@icons-pack/react-simple-icons'
-import { ExternalLink } from 'lucide-react'
-import Image from 'next/image'
+import { ProjectType } from "@/lib/projects";
+import { SiGithub } from "@icons-pack/react-simple-icons";
+import { ExternalLink } from "lucide-react";
+import Image from "next/image";
 
 export const ProjectHero = ({ project }: { project: ProjectType }) => {
   return (
@@ -50,9 +50,9 @@ export const ProjectHero = ({ project }: { project: ProjectType }) => {
             view on github
           </a>
         )}
-        {project.link && (
+        {project.docs && (
           <a
-            href={project.link}
+            href={project.docs}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-md bg-gray-800 px-4 py-2 text-sm transition-colors hover:bg-gray-700"
@@ -61,7 +61,18 @@ export const ProjectHero = ({ project }: { project: ProjectType }) => {
             visit docs
           </a>
         )}
+        {project.link && (
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 rounded-md bg-gray-800 px-4 py-2 text-sm transition-colors hover:bg-gray-700"
+          >
+            <ExternalLink size={18} />
+            visit website
+          </a>
+        )}
       </div>
     </>
-  )
-}
+  );
+};
