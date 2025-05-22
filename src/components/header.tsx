@@ -1,19 +1,19 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 const PAGES = [
-  { name: "Ned Hermann", path: "/" },
-  { name: "blogs", path: "/blogs" },
-  { name: "projects", path: "/projects" },
-];
+  { name: 'Ned Hermann', path: '/' },
+  { name: 'blogs', path: '/blogs' },
+  { name: 'projects', path: '/projects' },
+]
 
 export const Header = () => {
   return (
-    <div className="flex flex-row my-10 justify-between w-[60ch]">
+    <div className="my-10 flex w-[60ch] flex-row justify-between">
       <div>
         <Link
           key={PAGES[0].name}
           href={PAGES[0].path}
-          className="text-black font-semibold transition-colors duration-200 hover:text-blue-500 dark:text-white"
+          className="font-semibold text-black transition-colors duration-200 hover:text-blue-500 dark:text-white"
         >
           {PAGES[0].name}
         </Link>
@@ -30,5 +30,5 @@ export const Header = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
