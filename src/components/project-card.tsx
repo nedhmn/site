@@ -1,5 +1,5 @@
-import type { ProjectType } from '@/lib/projects'
-import Image from 'next/image'
+import type { ProjectType } from "@/lib/projects";
+import Image from "next/image";
 
 export const ProjectCard = ({ project }: { project: ProjectType }) => {
   return (
@@ -10,7 +10,7 @@ export const ProjectCard = ({ project }: { project: ProjectType }) => {
           alt={project.title}
           width={1000}
           height={1000}
-          className="h-full w-full object-cover opacity-80 transition-opacity hover:opacity-100"
+          className="h-full w-full object-cover"
         />
       </div>
       <div className="flex flex-col justify-between p-4 sm:w-2/3">
@@ -32,5 +32,5 @@ export const ProjectCard = ({ project }: { project: ProjectType }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
