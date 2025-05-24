@@ -1,12 +1,13 @@
-import { BackPage } from '@/components/back-page'
+import { BackPage } from "@/components/back-page";
+import { WorkHeader } from "@/components/work-header";
 
 const Page = () => {
   return (
     <div>
       <BackPage href="/" content="back home" />
-      Coming soon...
+      <WorkHeader />
     </div>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;
