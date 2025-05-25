@@ -8,7 +8,7 @@ const Page = () => {
     <div>
       <BackPage href="/" content="back home" />
       <WorkHeader />
-      <div className="border-l pl-6 border-gray-800 dark:border-zinc-300">
+      <div className="border-l pl-6 border-gray-400">
         {WORK_EXPERIENCE.map((work, index) => {
           return <WorkExperience key={index} work={work} />;
         })}

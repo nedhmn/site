@@ -18,7 +18,8 @@ export interface WorkExperienceType {
 export const WORK_EXPERIENCE: WorkExperienceType[] = [
   {
     role: "Tech Lead",
-    description: "",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor massa quis rhoncus pretium. Integer semper ligula at eros ullamcorper,",
     company: "Predicting Alpha",
     companyUrl: "https://www.predictingalpha.com/",
     startDate: "Jan 2025",
@@ -45,7 +46,8 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
   },
   {
     role: "Software Engineer",
-    description: "",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor massa quis rhoncus pretium. Integer semper ligula at eros ullamcorper,",
     company: "Predicting Alpha",
     companyUrl: "https://www.predictingalpha.com/",
     startDate: "Sept 2021",

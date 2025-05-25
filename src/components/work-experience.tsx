@@ -5,9 +5,9 @@ export const WorkExperience = ({ work }: { work: WorkExperienceType }) => {
   return (
     <div className="relative">
       {/* Timeline Dot */}
-      <div className="absolute w-3 h-3 bg-gray-800 dark:bg-zinc-300 rounded-full -left-[30px] top-1"></div>
+      <div className="absolute w-3 h-3 bg-gray-400 rounded-full -left-[30px] top-1"></div>
       {/* Work Header */}
-      <h2 className="font-semibold mt-8 text-gray-800 dark:text-zinc-200">
+      <h2 className="font-semibold mt-8 mb-2 text-gray-800 dark:text-zinc-200">
         {work.role}
       </h2>
       <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
@@ -20,13 +20,30 @@ export const WorkExperience = ({ work }: { work: WorkExperienceType }) => {
           {work.company}
           <ExternalLinkIcon size={14} className="ml-2" />
         </a>
-        <div className="flex items-center gap-1">
-          <CalendarIcon size={14} />
+        <div className="flex items-center mb-1">
+          <CalendarIcon size={14} className="mr-2" />
           <span className="leading-snug text-gray-800 dark:text-zinc-300">
             {work.startDate} - {work.endDate}
           </span>
         </div>
       </div>
+
+      {/* Work Description */}
+      <p className="leading-snug text-gray-800 dark:text-zinc-300 my-2">
+        {work.description}
+      </p>
+
+      {/* Work Highlights */}
+      <ul className="list-disc space-y-1 pl-5 text-gray-800 dark:text-zinc-300">
+        {work.highlights.map((highlight, index) => (
+          // Highlight Description
+          <li key={index} className="pl-1">
+            <p className="leading-snug text-gray-800 dark:text-zinc-300">
+              {highlight.description}
+            </p>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
