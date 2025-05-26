@@ -1,5 +1,5 @@
-import type { ProjectType } from "@/lib/projects";
-import Image from "next/image";
+import type { ProjectType } from '@/lib/projects'
+import Image from 'next/image'
 
 export const ProjectCard = ({ project }: { project: ProjectType }) => {
   return (
@@ -14,12 +14,8 @@ export const ProjectCard = ({ project }: { project: ProjectType }) => {
         />
       </div>
       <div className="flex flex-col justify-between p-4 sm:w-2/3">
-        <h3 className="mb-2 font-medium text-gray-800 dark:text-zinc-200">
-          {project.title}
-        </h3>
-        <p className="mb-3 text-sm leading-snug text-gray-600 dark:text-zinc-400">
-          {project.description}
-        </p>
+        <h3 className="mt-0 mb-2">{project.title}</h3>
+        <p className="mb-3 text-sm">{project.description}</p>
         <div className="flex flex-wrap gap-2">
           {project.tags.map((tag) => (
             <span
@@ -32,5 +28,5 @@ export const ProjectCard = ({ project }: { project: ProjectType }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

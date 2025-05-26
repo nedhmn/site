@@ -1,17 +1,15 @@
-import { ProjectType } from "@/lib/projects";
-import { SiGithub } from "@icons-pack/react-simple-icons";
-import { ExternalLink } from "lucide-react";
-import Image from "next/image";
+import { ProjectType } from '@/lib/projects'
+import { SiGithub } from '@icons-pack/react-simple-icons'
+import { ExternalLink } from 'lucide-react'
+import Image from 'next/image'
 
 export const ProjectHero = ({ project }: { project: ProjectType }) => {
   return (
     <>
       {/* Project Header */}
       <div>
-        <h1 className="mt-8 mb-3 font-medium">{project.title}</h1>
-        <p className="leading-snug text-gray-800 dark:text-zinc-300">
-          {project.description}
-        </p>
+        <h1>{project.title}</h1>
+        <p>{project.description}</p>
       </div>
 
       {/* Project Image */}
@@ -32,7 +30,7 @@ export const ProjectHero = ({ project }: { project: ProjectType }) => {
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-700 transition-colors dark:bg-zinc-700 dark:text-zinc-300 hover:bg-gray-300 hover:text-gray-900 dark:hover:bg-zinc-600 dark:hover:text-zinc-100"
+            className="flex items-center gap-2 rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-300 hover:text-gray-900 dark:bg-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-600 dark:hover:text-zinc-100"
           >
             <SiGithub size={18} />
             view on github
@@ -43,7 +41,7 @@ export const ProjectHero = ({ project }: { project: ProjectType }) => {
             href={project.docs}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-700 transition-colors dark:bg-zinc-700 dark:text-zinc-300 hover:bg-gray-300 hover:text-gray-900 dark:hover:bg-zinc-600 dark:hover:text-zinc-100"
+            className="flex items-center gap-2 rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-300 hover:text-gray-900 dark:bg-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-600 dark:hover:text-zinc-100"
           >
             <ExternalLink size={18} />
             visit docs
@@ -54,7 +52,7 @@ export const ProjectHero = ({ project }: { project: ProjectType }) => {
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-700 transition-colors dark:bg-zinc-700 dark:text-zinc-300 hover:bg-gray-300 hover:text-gray-900 dark:hover:bg-zinc-600 dark:hover:text-zinc-100"
+            className="flex items-center gap-2 rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-300 hover:text-gray-900 dark:bg-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-600 dark:hover:text-zinc-100"
           >
             <ExternalLink size={18} />
             visit website
@@ -62,5 +60,5 @@ export const ProjectHero = ({ project }: { project: ProjectType }) => {
         )}
       </div>
     </>
-  );
-};
+  )
+}
