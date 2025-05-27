@@ -10,6 +10,5 @@ export const createMetadata = (): Metadata => {
       default: 'Ned Hermann',
       template: '%s | Ned Hermann',
     },
-    description: 'Software Engineer.',
   }
 }
