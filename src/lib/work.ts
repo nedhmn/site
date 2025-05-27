@@ -29,7 +29,6 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
       {
         description:
           'Led and mentored a small team (<5) of frontend and backend developers, conducting PR reviews to ensure high code quality.',
-        images: [],
         tags: ['React', 'TypeScript', 'FastAPI', 'Python', 'MongoDB', 'Docker'],
       },
       {
@@ -39,7 +38,6 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
       {
         description:
           'Architected a scalable microservices stack (React, FastAPI, MongoDB), implementing CI/CD with GitHub Actions and Heroku.',
-        images: [],
         tags: ['React', 'TypeScript', 'FastAPI', 'Python', 'MongoDB', 'Docker'],
       },
     ],
@@ -57,31 +55,43 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
       {
         description:
           'Developed the VRP dashboard by replicating a financial strategy from Euan Sinclair, building a 500GB+ big data pipeline (GCP BigQuery, R, AWS, MongoDB) for backtesting, and integrating it into the main options application (React, Sass, R).',
-        images: [],
+        images: [
+          '/images/work/vrp-dashboard-1.png',
+          '/images/work/vrp-dashboard-2.png',
+        ],
         tags: ['React', 'JavaScript', 'R', 'AWS', 'GCP', 'MongoDB', 'Docker'],
       },
       {
         description:
           "Developed the Forward Factor dashboard, replicating a financial strategy, building a full-stack solution (React, Sass, R), and iterating on design with the strategy's author, Jim Compassano.",
-        images: [],
+        images: ['/images/work/ts-dashboard.png'],
         tags: ['React', 'JavaScript', 'R', 'AWS', 'MongoDB'],
       },
       {
         description:
           "Automated an infographic's creation and distribution (React, R, AWS, Docker), increasing leads by 5%.",
-        images: [],
+        images: ['/images/work/earnings-infographic.png'],
         tags: ['React', 'JavaScript', 'R', 'AWS', 'Docker'],
       },
       {
         description:
           'Developed the Overnight Strategy application in collaboration with InvestorsAlley, replicating a financial strategy, developing a data pipeline (AWS EC2, R, MongoDB, Docker), and implementing a full-stack solution (React, Sass, R) with consultation from Euan Sinclair.',
-        images: [],
+        images: [
+          '/images/work/overnight-dashboard.png',
+          '/images/work/overnight-stats-1.png',
+          '/images/work/overnight-stats-2.png',
+        ],
         tags: ['React', 'JavaScript', 'R', 'AWS', 'MongoDB', 'Docker'],
       },
       {
         description:
           'Developed a full-stack solution for the Options dashboard, featuring advanced scanners (Tanstack Tables), machine learning tools, and strategy dashboards (JavaScript, Sass, R, AWS, MongoDB).',
-        images: [],
+        images: [
+          '/images/work/scanner.png',
+          '/images/work/earnings-dashboard.png',
+          '/images/work/homepage.png',
+          '/images/work/strategy-masterclass.png',
+        ],
         tags: ['React', 'JavaScript', 'R', 'AWS', 'MongoDB', 'Docker'],
       },
     ],

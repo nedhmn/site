@@ -1,3 +1,4 @@
+import { WorkExperienceImage } from '@/components/work-experience-image'
 import type { WorkExperienceType } from '@/lib/work'
 import { CalendarIcon, ExternalLinkIcon } from 'lucide-react'
 
@@ -36,6 +37,11 @@ export const WorkExperience = ({ work }: { work: WorkExperienceType }) => {
           <li key={index} className="pb-1 pl-1">
             {/* Description */}
             <p className="l">{highlight.description}</p>
+
+            {/* Images */}
+            {highlight.images && (
+              <WorkExperienceImage images={highlight.images} />
+            )}
           </li>
         ))}
       </ul>

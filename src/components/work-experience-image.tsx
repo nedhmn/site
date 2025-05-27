@@ -1,5 +1,7 @@
+import { DialogTitle } from '@radix-ui/react-dialog'
+import { ImageIcon } from 'lucide-react'
 import Image from 'next/image'
-import { Dialog, DialogContent, DialogTitle, DialogTrigger } from './ui/dialog'
+import { Dialog, DialogContent, DialogTrigger } from './ui/dialog'
 
 interface WorkExperienceImageProps {
   images: string[]
@@ -11,24 +13,26 @@ export const WorkExperienceImage = ({ images }: WorkExperienceImageProps) => {
       {images.map((image, index) => (
         <Dialog key={index}>
           <DialogTrigger asChild>
-            <button className="group relative">
+            <button className="group relative rounded border border-gray-800 object-cover transition-colors hover:border-gray-400 dark:border-zinc-800 dark:hover:border-zinc-600">
               <Image
                 src={image}
                 alt={`Work Experience Image ${index + 1}`}
-                className="h-12 w-12 cursor-pointer rounded border border-gray-700 object-cover transition-colors hover:border-gray-500"
+                className="h-12 w-12"
                 width={48}
                 height={48}
               />
+              <div className="absolute inset-0 flex items-center justify-center rounded bg-black/30 transition-all duration-200 group-hover:bg-black/20">
+                <ImageIcon size={16} className="text-white" />
+              </div>
             </button>
           </DialogTrigger>
-          <DialogContent className="h-full max-h-[90vh] w-4xl max-w-full border-none sm:max-w-full">
-            <DialogTitle>Work Experience Image</DialogTitle>
+          <DialogContent className="flex h-full max-h-[80vh] justify-center border-none sm:max-w-full">
+            <DialogTitle className="hidden"></DialogTitle>
             <Image
               src={image}
               alt={`Work Experience Image ${index + 1}`}
               className="mx-auto max-h-[90vh] max-w-full rounded-lg object-contain"
-              width={1000}
-              height={1000}
+              fill={true}
             />
           </DialogContent>
         </Dialog>
