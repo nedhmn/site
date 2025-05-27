@@ -11,7 +11,7 @@ export const WorkExperienceImage = ({ images }: WorkExperienceImageProps) => {
   return (
     <div className="mt-2 flex flex-wrap gap-2">
       {images.map((image, index) => (
-        <Dialog key={index}>
+        <Dialog key={index} modal={false}>
           <DialogTrigger asChild>
             <button className="group relative">
               <Image
