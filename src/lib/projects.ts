@@ -67,12 +67,12 @@ export const PROJECTS: ProjectType[] = [
     tags: ['TypeScript', 'Next.js', 'Vercel'],
   },
   {
-    title: 'Yu-Gi-Oh! War League Analysis',
+    title: 'Yu-Gi-Oh! War League Analytics',
     description:
       'Data pipelines to collect, process, and analyze Goat Format War League (GFWL) data.',
-    href: '/projects/gfwl-analysis',
-    image: '/images/projects/gfwl-analysis.png',
-    github: 'https://github.com/nedhmn/gfwl-analysis',
+    href: '/projects/gfwl-analytics',
+    image: '/images/projects/gfwl-analytics.png',
+    github: 'https://github.com/nedhmn/gfwl-analytics',
     tags: ['Python', 'Pandas', 'Polars', 'SQL', 'AWS'],
   },
 ]
