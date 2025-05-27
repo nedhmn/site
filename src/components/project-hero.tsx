@@ -13,7 +13,7 @@ export const ProjectHero = ({ project }: { project: ProjectType }) => {
       </div>
 
       {/* Project Image */}
-      <div className="mt-2 flex items-center overflow-hidden rounded-lg border border-gray-800">
+      <div className="mt-2 flex items-center overflow-hidden rounded-lg border border-gray-200 dark:border-zinc-800">
         <Image
           src={project.image}
           alt={`${project.title} preview`}

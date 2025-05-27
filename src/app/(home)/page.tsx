@@ -24,8 +24,8 @@ const Page = () => {
 
       {/* Recent Projects */}
       <section>
-        <div className="flex items-center justify-between">
-          <h2>Recent Projects</h2>
+        <div className="mt-8 mb-3 flex items-center justify-between">
+          <h2 className="m-0">Recent Projects</h2>
           <Link
             href="/projects"
             className="flex items-center gap-1 transition-colors duration-200"
@@ -43,9 +43,9 @@ const Page = () => {
       </section>
 
       {/* Recent Blogs */}
-      <section className="mt-5">
-        <div className="flex items-center justify-between">
-          <h2>Recent Blogs</h2>
+      <section className="mt-10">
+        <div className="mt-8 mb-3 flex items-center justify-between">
+          <h2 className="m-0">Recent Blogs</h2>
           <Link
             href="/blogs"
             className="flex items-center gap-1 transition-colors duration-200"
