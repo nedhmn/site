@@ -1,6 +1,8 @@
 import { WorkExperienceImage } from '@/components/work-experience-image'
 import type { WorkExperienceType } from '@/lib/work'
 import { CalendarIcon, ExternalLinkIcon } from 'lucide-react'
+import ReactMarkdown from 'react-markdown'
+import rehypeExternalLinks from 'rehype-external-links'
 
 export const WorkExperience = ({ work }: { work: WorkExperienceType }) => {
   return (
@@ -32,11 +34,20 @@ export const WorkExperience = ({ work }: { work: WorkExperienceType }) => {
       <p className="my-2 text-foreground">{work.description}</p>
 
       {/* Work Highlights */}
-      <ul className="list-disc space-y-1 pl-5 text-gray-800 dark:text-zinc-300">
+      <ul className="work-highlights list-disc space-y-1 pl-5 text-gray-800 dark:text-zinc-300">
         {work.highlights.map((highlight, index) => (
           <li key={index} className="pb-1 pl-1">
             {/* Description */}
-            <p className="l">{highlight.description}</p>
+            <ReactMarkdown
+              rehypePlugins={[
+                [
+                  rehypeExternalLinks,
+                  { target: '_blank', rel: 'noopener noreferrer' },
+                ],
+              ]}
+            >
+              {highlight.description}
+            </ReactMarkdown>
 
             {/* Images */}
             {highlight.images && (

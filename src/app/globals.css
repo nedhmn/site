@@ -148,13 +148,14 @@
   li {
     @apply pl-1;
   }
-  em {
-    @apply font-medium;
-  }
+  em,
   strong {
-    @apply font-medium;
+    @apply font-medium text-foreground;
   }
   button {
     @apply cursor-pointer;
+  }
+  .work-highlights a {
+    @apply text-blue-500 hover:text-blue-700;
   }
 }

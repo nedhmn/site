@@ -36,8 +36,7 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
           'Led the full hiring and onboarding process to build the dashboard development team.',
       },
       {
-        description:
-          'Architected a scalable microservices stack (React, FastAPI, MongoDB), implementing CI/CD with GitHub Actions and Heroku.',
+        description: `Architected a scalable microservices stack (React, FastAPI, MongoDB), implementing CI/CD with GitHub Actions and Heroku.`,
         tags: ['React', 'TypeScript', 'FastAPI', 'Python', 'MongoDB', 'Docker'],
       },
     ],
@@ -54,7 +53,7 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
     highlights: [
       {
         description:
-          'Developed the VRP dashboard by replicating a financial strategy from Euan Sinclair, building a 500GB+ big data pipeline (GCP BigQuery, R, AWS, MongoDB) for backtesting, and integrating it into the main options application (React, Sass, R).',
+          'Developed the VRP dashboard by replicating a financial strategy from [Euan Sinclair](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1455183), building a 500GB+ big data pipeline (GCP BigQuery, R, AWS, MongoDB) for backtesting, and integrating it into the main options application (React, Sass, R).',
         images: [
           '/images/work/vrp-dashboard-1.png',
           '/images/work/vrp-dashboard-2.png',
@@ -63,7 +62,7 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
       },
       {
         description:
-          "Developed the Forward Factor dashboard, replicating a financial strategy, building a full-stack solution (React, Sass, R), and iterating on design with the strategy's author, Jim Compassano.",
+          "Developed the Forward Factor dashboard, replicating a [financial strategy](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3240028), building a full-stack solution (React, Sass, R), and iterating on design with the strategy's author, [Jim Campasano](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1861902).",
         images: ['/images/work/ts-dashboard.png'],
         tags: ['React', 'JavaScript', 'R', 'AWS', 'MongoDB'],
       },
@@ -75,7 +74,7 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
       },
       {
         description:
-          'Developed the Overnight Strategy application in collaboration with InvestorsAlley, replicating a financial strategy, developing a data pipeline (AWS EC2, R, MongoDB, Docker), and implementing a full-stack solution (React, Sass, R) with consultation from Euan Sinclair.',
+          'Developed the Overnight Strategy application in collaboration with [InvestorsAlley](https://www.investorsalley.com/), replicating a [financial strategy](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2633476), developing a data pipeline (R, AWS, MongoDB, Docker), and implementing a full-stack solution (React, Sass, R) with consultation from [Euan Sinclair](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1455183).',
         images: [
           '/images/work/overnight-dashboard.png',
           '/images/work/overnight-stats-1.png',
@@ -85,14 +84,22 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
       },
       {
         description:
-          'Developed a full-stack solution for the Options dashboard, featuring advanced scanners (Tanstack Tables), machine learning tools, and strategy dashboards (JavaScript, Sass, R, AWS, MongoDB).',
+          'Developed a full-stack solution for the Options dashboard, featuring data pipelines (R, AWS, MongoDB, Docker, Grafana), advanced scanners (Tanstack Tables), machine learning tools, and strategy dashboards (React, Sass, R).',
         images: [
           '/images/work/scanner.png',
           '/images/work/earnings-dashboard.png',
           '/images/work/homepage.png',
           '/images/work/strategy-masterclass.png',
         ],
-        tags: ['React', 'JavaScript', 'R', 'AWS', 'MongoDB', 'Docker'],
+        tags: [
+          'React',
+          'JavaScript',
+          'R',
+          'AWS',
+          'MongoDB',
+          'Docker',
+          'Grafana',
+        ],
       },
     ],
   },

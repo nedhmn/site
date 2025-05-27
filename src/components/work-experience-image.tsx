@@ -21,7 +21,7 @@ export const WorkExperienceImage = ({ images }: WorkExperienceImageProps) => {
                 width={48}
                 height={48}
               />
-              <div className="absolute inset-0 flex items-center justify-center rounded bg-black/30 transition-all duration-200 group-hover:bg-black/20">
+              <div className="absolute inset-0 flex items-center justify-center rounded bg-black/40 transition-all duration-200 group-hover:bg-black/30">
                 <ImageIcon size={16} className="text-white" />
               </div>
             </button>
