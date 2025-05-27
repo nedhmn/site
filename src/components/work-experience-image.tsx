@@ -26,13 +26,17 @@ export const WorkExperienceImage = ({ images }: WorkExperienceImageProps) => {
               </div>
             </button>
           </DialogTrigger>
-          <DialogContent className="flex h-full max-h-[80vh] justify-center border-none sm:max-w-full">
+          <DialogContent className="flex max-h-[90vh] max-w-[90vw] justify-center border-none p-0 sm:max-w-[90vw]">
             <DialogTitle className="hidden"></DialogTitle>
             <Image
               src={image}
               alt={`Work Experience Image ${index + 1}`}
-              className="mx-auto max-h-[90vh] max-w-full rounded-lg object-contain"
-              fill={true}
+              className="h-auto max-h-[90vh] w-auto max-w-[90vw] object-contain"
+              width={0}
+              height={0}
+              sizes="90vw"
+              quality={100}
+              unoptimized={true}
             />
           </DialogContent>
         </Dialog>
