@@ -37,7 +37,7 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
       },
       {
         description:
-          'Architected a scalable microservices stack (React, FastAPI, MongoDB), implementing CI/CD with GitHub Actions and Heroku.',
+          'Orchestrated the architecture and implementation of a scalable web application (React, FastAPI, MongoDB), implementing CI/CD pipelines with GitHub Actions and Heroku.',
         tags: ['React', 'TypeScript', 'FastAPI', 'Python', 'MongoDB', 'Docker'],
       },
     ],
@@ -45,7 +45,7 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
   {
     role: 'Software Engineer',
     description:
-      'Developed and optimized full-stack applications and data pipelines for financial strategies, transforming complex quantitative models into robust, user-friendly software.',
+      'Developed and optimized full-stack applications and data pipelines for financial strategies, transforming complex quantitative models into user-friendly software.',
     company: 'Predicting Alpha',
     companyUrl: 'https://www.predictingalpha.com/',
     startDate: 'Sept 2021',
@@ -54,7 +54,7 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
     highlights: [
       {
         description:
-          'Developed the VRP dashboard by replicating a financial strategy from [Euan Sinclair](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1455183), building a 500GB+ big data pipeline (GCP BigQuery, R, AWS, MongoDB) for backtesting, and integrating it into the main options application (React, Sass, R).',
+          'Engineered the VRP dashboard, translating financial research from [Euan Sinclair](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1455183) into a practical strategy. Built a 500GB+ big data pipeline (GCP BigQuery, R, AWS, MongoDB) for backtesting, and integrated it into the main options application (React, Sass, R).',
         images: [
           '/images/work/vrp-dashboard-1.png',
           '/images/work/vrp-dashboard-2.png',
@@ -63,7 +63,7 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
       },
       {
         description:
-          "Developed the Forward Factor dashboard, replicating a [financial strategy](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3240028), building a full-stack solution (React, Sass, R), and iterating on design with the strategy's author, [Jim Campasano](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1861902).",
+          "Developed the Forward Factor dashboard, interpreting and productizing a financial strategy from research by [Jim Campasano](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3240028). Built a full-stack solution (React, Sass, R) and iterated on design with the strategy's author.",
         images: ['/images/work/ts-dashboard.png'],
         tags: ['React', 'JavaScript', 'R', 'AWS', 'MongoDB'],
       },
@@ -75,7 +75,7 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
       },
       {
         description:
-          'Developed the Overnight Strategy application in collaboration with [InvestorsAlley](https://www.investorsalley.com/), replicating a [financial strategy](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2633476), developing a data pipeline (R, AWS, MongoDB, Docker), and implementing a full-stack solution (React, Sass, R) with consultation from [Euan Sinclair](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1455183).',
+          'Developed the Overnight Strategy application in collaboration with [InvestorsAlley](https://www.investorsalley.com/), translating high-level financial research into a practical strategy. Developed a data pipeline (R, AWS, MongoDB, Docker), and built a full-stack solution (React, Sass, R).',
         images: [
           '/images/work/overnight-dashboard.png',
           '/images/work/overnight-stats-1.png',
