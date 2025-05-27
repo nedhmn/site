@@ -15,12 +15,12 @@ export function ModeToggle() {
   const { setTheme } = useTheme()
 
   return (
-    <DropdownMenu>
+    <DropdownMenu modal={false}>
       <DropdownMenuTrigger asChild>
         <Button
           variant="link"
           size="icon"
-          className="hover:text-blue-500 focus-visible:ring-0"
+          className="text-link-primary-foreground hover:text-blue-500 focus-visible:ring-0"
         >
           <Sun className="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
           <Moon className="absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
