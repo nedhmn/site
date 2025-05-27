@@ -20,7 +20,7 @@ export const ProjectCard = ({ project }: { project: ProjectType }) => {
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="rounded-full bg-gray-200 px-2 py-1 text-xs text-gray-700 dark:bg-zinc-700 dark:text-zinc-300"
+              className="rounded-full bg-gray-200 px-2 py-1 text-xs text-gray-700 dark:bg-gray-800 dark:text-white"
             >
               {tag}
             </span>

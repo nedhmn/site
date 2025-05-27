@@ -1,0 +1,10 @@
+import { BlogHeader } from '@/components/blog-header'
+import { BLOGS } from '@/lib/blogs'
+
+export const blog = BLOGS.find(
+  (b) => b.href === '/blogs/reflecting-on-my-first-successful-options-portfolio'
+)
+
+<BlogHeader blog={blog} />
+
+Coming soon...

@@ -21,6 +21,7 @@ const components = {
   em: (props: ComponentPropsWithoutRef<'em'>) => <em {...props} />,
   strong: (props: ComponentPropsWithoutRef<'strong'>) => <strong {...props} />,
   a: ({ href, children, ...props }: AnchorProps) => {
+    const className = 'text-blue-500 hover:text-blue-700'
     if (href?.startsWith('/')) {
       return (
         <Link href={href} {...props}>
@@ -36,7 +37,13 @@ const components = {
       )
     }
     return (
-      <a href={href} target="_blank" rel="noopener noreferrer" {...props}>
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={className}
+        {...props}
+      >
         {children}
       </a>
     )

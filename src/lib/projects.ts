@@ -1,4 +1,15 @@
-export const PROJECTS = [
+export interface ProjectType {
+  title: string
+  description: string
+  href: string
+  image: string
+  github: string
+  docs?: string
+  link?: string
+  tags: string[]
+}
+
+export const PROJECTS: ProjectType[] = [
   {
     title: 'Yu-Gi-Oh! AI Chatbot',
     description: 'AI RAG chatbot for Yu-Gi-Oh! Goat Format rulings.',
@@ -57,5 +68,3 @@ export const PROJECTS = [
     tags: ['Python', 'Pandas', 'Polars', 'SQL', 'AWS'],
   },
 ]
-
-export type ProjectType = (typeof PROJECTS)[number]

@@ -1,4 +1,6 @@
+import { BlogCard } from '@/components/blog-card'
 import { ProjectCard } from '@/components/project-card'
+import { BLOGS } from '@/lib/blogs'
 import { PROJECTS } from '@/lib/projects'
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
@@ -23,7 +25,7 @@ const Page = () => {
       {/* Recent Projects */}
       <section>
         <div className="flex items-center justify-between">
-          <h2>Recent Projects</h2>{' '}
+          <h2>Recent Projects</h2>
           <Link
             href="/projects"
             className="flex items-center gap-1 transition-colors duration-200"
@@ -35,6 +37,26 @@ const Page = () => {
           {PROJECTS.slice(0, 3).map((project) => (
             <Link key={project.title} href={project.href}>
               <ProjectCard project={project} />
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* Recent Blogs */}
+      <section className="mt-5">
+        <div className="flex items-center justify-between">
+          <h2>Recent Blogs</h2>
+          <Link
+            href="/blogs"
+            className="flex items-center gap-1 transition-colors duration-200"
+          >
+            view all <ArrowRight size={16} />
+          </Link>
+        </div>
+        <div className="mt-5 flex flex-col gap-6">
+          {BLOGS.slice(0, 3).map((blog) => (
+            <Link key={blog.title} href={blog.href}>
+              <BlogCard blog={blog} />
             </Link>
           ))}
         </div>

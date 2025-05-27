@@ -30,7 +30,7 @@ export const ProjectHero = ({ project }: { project: ProjectType }) => {
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-300 hover:text-gray-900 dark:bg-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-600 dark:hover:text-zinc-100"
+            className="flex items-center gap-2 rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-300 hover:text-gray-900 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700"
           >
             <SiGithub size={18} />
             view on github
@@ -41,7 +41,7 @@ export const ProjectHero = ({ project }: { project: ProjectType }) => {
             href={project.docs}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-300 hover:text-gray-900 dark:bg-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-600 dark:hover:text-zinc-100"
+            className="flex items-center gap-2 rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-300 hover:text-gray-900 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700"
           >
             <ExternalLink size={18} />
             visit docs
@@ -52,7 +52,7 @@ export const ProjectHero = ({ project }: { project: ProjectType }) => {
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-300 hover:text-gray-900 dark:bg-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-600 dark:hover:text-zinc-100"
+            className="flex items-center gap-2 rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-300 hover:text-gray-900 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700"
           >
             <ExternalLink size={18} />
             visit website
