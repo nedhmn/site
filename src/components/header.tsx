@@ -1,5 +1,6 @@
 'use client'
 
+import { ModeToggle } from '@/components/mode-toggle'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -22,16 +23,17 @@ export const Header = () => {
         {PAGES[0].name}
       </Link>
       <div className="flex-1" />
-      <div className="flex flex-row space-x-4">
+      <div className="flex flex-row items-center">
         {PAGES.slice(1).map((page) => (
           <Link
             key={page.name}
             href={page.path}
-            className={`${pathname.startsWith(page.path) ? 'text-blue-500' : ''}`}
+            className={`${pathname.startsWith(page.path) ? 'text-blue-500' : ''} px-2`}
           >
             {page.name}
           </Link>
         ))}
+        <ModeToggle />
       </div>
     </header>
   )

@@ -1,21 +1,6 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
-/**
- * leerob theme:
- * bg-white = oklch(1, 0, 0)
- * bg-zinc-950 = oklch(14.1% 0.005 285.823)
- * text-gray-900 = oklch(21% 0.034 264.665)
- * text-gray-800 = oklch(27.8% 0.033 256.848)
- * text-sinze-200 = oklch(92% 0.004 286.32)
- * text-sinze-300 = oklch(87.1% 0.006 286.286)
- *
- * bg-gray-200
- * text-gray-700
- * bg-zing-700
- * text-zing-300
- */
-
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -69,17 +54,17 @@
   --card-foreground: oklch(14.1% 0.005 285.823);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(14.1% 0.005 285.823);
-  --primary: oklch(87.1% 0.006 286.286);
+  --primary: oklch(70.7% 0.022 261.325);
   --primary-foreground: oklch(27.8% 0.033 256.848);
   --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(87.1% 0.006 286.286);
+  --secondary-foreground: oklch(70.7% 0.022 261.325);
   --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
+  --muted-foreground: oklch(27.8% 0.033 256.848);
   --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(87.1% 0.006 286.286);
+  --accent-foreground: oklch(70.7% 0.022 261.325);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
+  --border: oklch(70.7% 0.022 261.325);
+  --input: oklch(70.7% 0.022 261.325);
   --ring: oklch(0.708 0 0);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
@@ -88,11 +73,11 @@
   --chart-5: oklch(0.769 0.188 70.08);
   --sidebar: oklch(27.8% 0.033 256.848);
   --sidebar-foreground: oklch(14.1% 0.005 285.823);
-  --sidebar-primary: oklch(87.1% 0.006 286.286);
+  --sidebar-primary: oklch(70.7% 0.022 261.325);
   --sidebar-primary-foreground: oklch(27.8% 0.033 256.848);
   --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(87.1% 0.006 286.286);
-  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-accent-foreground: oklch(70.7% 0.022 261.325);
+  --sidebar-border: oklch(70.7% 0.022 261.325);
   --sidebar-ring: oklch(0.708 0 0);
 
   /* Custom */
@@ -102,12 +87,12 @@
 .dark {
   --background: oklch(14.1% 0.005 285.823);
   --foreground: oklch(92% 0.004 286.32);
-  --card: oklch(87.1% 0.006 286.286);
+  --card: oklch(70.7% 0.022 261.325);
   --card-foreground: oklch(92% 0.004 286.32);
-  --popover: oklch(87.1% 0.006 286.286);
+  --popover: oklch(14.1% 0.005 285.823);
   --popover-foreground: oklch(92% 0.004 286.32);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(87.1% 0.006 286.286);
+  --primary: oklch(70.7% 0.022 261.325);
+  --primary-foreground: oklch(70.7% 0.022 261.325);
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(92% 0.004 286.32);
   --muted: oklch(0.269 0 0);
@@ -117,20 +102,20 @@
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
+  --ring: oklch(27.8% 0.033 256.848);
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(87.1% 0.006 286.286);
+  --sidebar: oklch(70.7% 0.022 261.325);
   --sidebar-foreground: oklch(92% 0.004 286.32);
   --sidebar-primary: oklch(0.488 0.243 264.376);
   --sidebar-primary-foreground: oklch(92% 0.004 286.32);
   --sidebar-accent: oklch(0.269 0 0);
   --sidebar-accent-foreground: oklch(92% 0.004 286.32);
   --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --sidebar-ring: oklch(27.8% 0.033 256.848);
 
   /* Custom */
   --link-primary-foreground: oklch(70.7% 0.022 261.325);
@@ -138,7 +123,7 @@
 
 @layer base {
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground shadow-none;
   }
   h1,
   h2,
@@ -152,7 +137,7 @@
     @apply leading-snug text-primary-foreground;
   }
   a {
-    @apply text-link-primary-foreground transition-colors duration-200 hover:text-blue-500 dark:underline dark:decoration-gray-800 dark:underline-offset-2 hover:dark:text-gray-300;
+    @apply text-link-primary-foreground transition-colors duration-200 hover:text-blue-500 dark:decoration-gray-800;
   }
   ol {
     @apply list-decimal space-y-2 pl-5;
@@ -168,5 +153,8 @@
   }
   strong {
     @apply font-medium;
+  }
+  button {
+    @apply cursor-pointer;
   }
 }
