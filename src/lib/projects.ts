@@ -17,7 +17,7 @@ export const PROJECTS: ProjectType[] = [
     image: '/images/projects/ygo-ai-chatbot.png',
     github: 'https://github.com/nedhmn/ygo-ruling-ai-chatbot',
     docs: 'https://nedhmn.github.io/ygo-ruling-ai-chatbot/',
-    tags: ['Typescript', 'Next.js', 'AI RAG', 'OpenAI', 'Pinecone'],
+    tags: ['TypeScript', 'Next.js', 'AI RAG', 'OpenAI', 'Pinecone'],
   },
   {
     title: 'Yu-Gi-Oh! Discord Bot',
@@ -49,6 +49,14 @@ export const PROJECTS: ProjectType[] = [
     tags: ['Python', 'Terraform', 'AWS', 'SQL'],
   },
   {
+    title: 'site',
+    description: 'My personal website built with Next.js and MDX.',
+    href: '/projects/site',
+    image: '/images/projects/site.png',
+    github: 'https://github.com/nedhmn/site',
+    tags: ['TypeScript', 'Next.js', 'MDX', 'Vercel'],
+  },
+  {
     title: 'ygeometric',
     description:
       'A hypergeometric probability calculator for Yu-Gi-Oh! deck optimization. Successor to yugioh.party.',
@@ -56,7 +64,7 @@ export const PROJECTS: ProjectType[] = [
     image: '/images/projects/ygeometric.png',
     github: 'https://github.com/nedhmn/ygeometric',
     link: 'https://www.ygeometric.com/',
-    tags: ['Typescript', 'Next.js', 'Vercel'],
+    tags: ['TypeScript', 'Next.js', 'Vercel'],
   },
   {
     title: 'Yu-Gi-Oh! War League Analysis',

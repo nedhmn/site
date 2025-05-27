@@ -1,0 +1,32 @@
+import { BackPage } from '@/components/back-page'
+import { PROJECTS } from '@/lib/projects'
+import { ProjectHero } from '@/components/project-hero'
+
+export const project = PROJECTS.find((p) => p.title === 'site')
+
+<BackPage href="/projects" content="back to projects" />
+
+<ProjectHero project={project} />
+
+## ✨ Inspiration
+
+I built this personal website to aggregate my projects, work experience, and blog, and share a bit about myself. A key requirement was easily adding new content, especially projects and work, via Markdown.
+
+My initial search for solutions like [Contentlayer](https://github.com/timlrx/contentlayer2) or existing templates were often overengineered or didn't fit the minimalist style I wanted.
+
+Then I found [leerob's site](https://github.com/leerob/site). Its simple styling and use of [MDX](https://nextjs.org/docs/pages/guides/mdx) was the perfect fit. This site shares a similar style, but I've expanded it with more features to showcase my blogs, projects, and work experience.
+
+## 🛠️ Technologies
+
+- **Next.js:** React framework for the chatbot.
+- **MDX:** Superset of markdown that allows JSX.
+- **ReactMarkdown:** Markdown component for React.
+- **Tailwind CSS:** Utility-first CSS.
+- **shadcn/ui:** Reusable UI components.
+- **TypeScript:** For type safety.
+- **Vercel:** Hosting platform for the website.
+
+## ⚙️ Tooling
+
+- **ESLint:** Code linting.
+- **Prettier:** Code formatting.
