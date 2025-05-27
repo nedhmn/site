@@ -13,11 +13,11 @@ export const WorkExperienceImage = ({ images }: WorkExperienceImageProps) => {
       {images.map((image, index) => (
         <Dialog key={index}>
           <DialogTrigger asChild>
-            <button className="group relative rounded border border-gray-800 object-cover transition-colors hover:border-gray-400 dark:border-zinc-800 dark:hover:border-zinc-600">
+            <button className="group relative">
               <Image
                 src={image}
                 alt={`Work Experience Image ${index + 1}`}
-                className="h-12 w-12"
+                className="h-12 w-12 rounded border border-gray-800 object-cover transition-colors hover:border-gray-400 dark:border-zinc-800 dark:hover:border-zinc-600"
                 width={48}
                 height={48}
               />

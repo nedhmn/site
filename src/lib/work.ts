@@ -19,7 +19,7 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
   {
     role: 'Tech Lead',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor massa quis rhoncus pretium. Integer semper ligula at eros ullamcorper,',
+      'Led the technical vision and execution for financial technology projects, building and guiding a team to deliver high-quality, scalable solutions.',
     company: 'Predicting Alpha',
     companyUrl: 'https://www.predictingalpha.com/',
     startDate: 'Jan 2025',
@@ -36,7 +36,8 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
           'Led the full hiring and onboarding process to build the dashboard development team.',
       },
       {
-        description: `Architected a scalable microservices stack (React, FastAPI, MongoDB), implementing CI/CD with GitHub Actions and Heroku.`,
+        description:
+          'Architected a scalable microservices stack (React, FastAPI, MongoDB), implementing CI/CD with GitHub Actions and Heroku.',
         tags: ['React', 'TypeScript', 'FastAPI', 'Python', 'MongoDB', 'Docker'],
       },
     ],
@@ -44,7 +45,7 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
   {
     role: 'Software Engineer',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor massa quis rhoncus pretium. Integer semper ligula at eros ullamcorper,',
+      'Developed and optimized full-stack applications and data pipelines for financial strategies, transforming complex quantitative models into robust, user-friendly software.',
     company: 'Predicting Alpha',
     companyUrl: 'https://www.predictingalpha.com/',
     startDate: 'Sept 2021',
