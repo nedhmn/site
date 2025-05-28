@@ -11,12 +11,8 @@ const Page = () => {
       {/* About Me */}
       <section>
         <p>
-          {`I'm a full-stack software developer with over four years of experience
-           in agile startups.`}
-        </p>
-        <p className="mt-3">
-          {`My early startup experience allowed me to wear many hats in fast-paced 
-          environments, leveraging great mentors across full-stack web development and data engineering.`}
+          {`I'm a full-stack developer with over 4 years of experience. 
+          I build web applications and manage data solutions.`}
         </p>
       </section>
 

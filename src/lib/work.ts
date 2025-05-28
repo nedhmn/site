@@ -43,7 +43,7 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
     ],
   },
   {
-    role: 'Software Engineer',
+    role: 'Software Developer',
     description:
       'Developed and optimized full-stack applications and data pipelines for financial strategies, transforming complex quantitative models into user-friendly software.',
     company: 'Predicting Alpha',
@@ -54,7 +54,7 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
     highlights: [
       {
         description:
-          'Engineered the VRP dashboard, translating financial research from [Euan Sinclair](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1455183) into a practical strategy. Built a 500GB+ big data pipeline (GCP BigQuery, R, AWS, MongoDB) for backtesting, and integrated it into the main options application (React, Sass, R).',
+          'Developed the VRP dashboard, translating financial research from [Euan Sinclair](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1455183) into a practical strategy. Built a 500GB+ big data pipeline (GCP BigQuery, R, AWS, MongoDB) for backtesting, and integrated it into the main options application (React, Sass, R).',
         images: [
           '/images/work/vrp-dashboard-1.png',
           '/images/work/vrp-dashboard-2.png',
@@ -63,7 +63,7 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
       },
       {
         description:
-          "Developed the Forward Factor dashboard, interpreting and productizing a financial strategy from research by [Jim Campasano](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3240028). Built a full-stack solution (React, Sass, R) and iterated on design with the strategy's author.",
+          "Developed the Forward Factor dashboard, translating financial research from [Jim Campasano](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3240028) into a practical strategy. Built a full-stack solution (React, Sass, R) and iterated on design with the strategy's author.",
         images: ['/images/work/ts-dashboard.png'],
         tags: ['React', 'JavaScript', 'R', 'AWS', 'MongoDB'],
       },
@@ -75,7 +75,7 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
       },
       {
         description:
-          'Developed the Overnight Strategy application in collaboration with [InvestorsAlley](https://www.investorsalley.com/), translating high-level financial research into a practical strategy. Developed a data pipeline (R, AWS, MongoDB, Docker), and built a full-stack solution (React, Sass, R).',
+          'Developed the Overnight Strategy application in collaboration with [InvestorsAlley](https://www.investorsalley.com/), translating financial research into a practical strategy. Developed a data pipeline (R, AWS, MongoDB, Docker), and built a full-stack solution (React, Sass, R).',
         images: [
           '/images/work/overnight-dashboard.png',
           '/images/work/overnight-stats-1.png',
