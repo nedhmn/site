@@ -1,6 +1,4 @@
-import { BlogCard } from '@/components/blog-card'
 import { ProjectCard } from '@/components/project-card'
-import { BLOGS } from '@/lib/blogs'
 import { PROJECTS } from '@/lib/projects'
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
@@ -37,7 +35,7 @@ const Page = () => {
       </section>
 
       {/* Recent Blogs */}
-      <section className="mt-10">
+      {/* <section className="mt-10">
         <div className="mt-8 mb-3 flex items-center justify-between">
           <h2 className="m-0">Recent Blogs</h2>
           <Link
@@ -54,7 +52,7 @@ const Page = () => {
             </Link>
           ))}
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }

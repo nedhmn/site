@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation'
 const PAGES = [
   { name: 'Ned Hermann', path: '/' },
   { name: 'work', path: '/work' },
-  { name: 'blogs', path: '/blogs' },
+  //   { name: 'blogs', path: '/blogs' },
   { name: 'projects', path: '/projects' },
 ]
 
