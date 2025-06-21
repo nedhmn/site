@@ -80,6 +80,11 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
       },
       {
         description:
+          'Increased marketing leads by 5% and user engagement by 10% by developing an automated infographic generation and distribution service using React and AWS',
+        images: ['/images/work/earnings-infographic.png'],
+      },
+      {
+        description:
           'Developed an end-to-end internal analytics dashboard, unifying data from disparate SaaS sources to establish a single source of truth for accurate business KPIs',
       },
       {
