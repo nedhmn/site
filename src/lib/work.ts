@@ -1,10 +1,10 @@
-interface WorkHighlightType {
+type WorkHighlightType = {
   description: string
   images?: string[]
   tags?: string[]
 }
 
-export interface WorkExperienceType {
+export type WorkExperienceType = {
   role: string
   description: string
   company: string
@@ -19,7 +19,7 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
   {
     role: 'Senior Software Engineer',
     description:
-      'Led full-stack development and team management to deliver performant web applications and robust software solutions.',
+      'Led architectural migrations, backend API development, and team direction to ship modern, high-performance web applications.',
     company: 'Predicting Alpha',
     companyUrl: 'https://www.predictingalpha.com/',
     startDate: 'Jan 2025',
@@ -28,19 +28,19 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
     highlights: [
       {
         description:
-          'Recruited, onboarded, and managed a team (<5) of frontend and backend developers to deliver full-stack solutions.',
+          'Led the architectural migration of the core platform to a decoupled, TypeScript-based React SPA, replacing a server-driven UI to build more complex and maintainable features',
       },
       {
         description:
-          'Led frontend team to develop a React application for dashboards and ML tools, optimizing performance with router-based fetch patterns and render profiling, and integrating user analytics.',
+          'Architected and delivered a new backend API using Python and FastAPI to support a new suite of on-demand machine learning tools and user management features',
       },
       {
         description:
-          'Developed RESTful HTTP API in Python using FastAPI, integrating user analytics, error monitoring, secure JWT authentication, Redis caching, and rate limiting.',
+          'Recruited, onboarded, and directed a full-stack team of up to 4 engineers, owning feature development from conception to deployment',
       },
       {
         description:
-          'Created GitHub CI/CD pipelines for Docker images, automating linting, E2E frontend tests with Cypress, backend unit tests with Pytest, builds, and deployments across staging environments.',
+          'Established a new CI/CD pipeline with GitHub Actions to support the containerized Python and React services, automating all build, test, and deployment processes',
       },
     ],
   },
@@ -56,7 +56,7 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
     highlights: [
       {
         description:
-          'Architected and developed a full-stack, scalable financial data platform using React and an R API, featuring AWS data pipelines, charts, tables, ML tools, and CRUD services across 1,000+ users. ',
+          'Architected a full-stack options analytics platform on AWS for over 1,000 users, featuring a reactive WebSocket API and a server-driven SPA frontend that utilized React libraries for dynamic UI components',
         images: [
           '/images/work/earnings-dashboard.png',
           '/images/work/vrp-dashboard-1.png',
@@ -66,28 +66,36 @@ export const WORK_EXPERIENCE: WorkExperienceType[] = [
       },
       {
         description:
-          'Developed a scanner using Tanstack Tables, processing over 200 columns and thousands of rows with custom settings, metrics, call-to-actions, and CRUD services.',
+          'Engineered over 20 interactive financial charts with Highcharter to visualize complex options data, transforming raw data tables into actionable visual insights',
+        images: ['/images/work/vrp-backtest-chart.png'],
+      },
+      {
+        description:
+          'Engineered a high-performance data scanner capable of rendering and filtering thousands of rows across 200+ columns in under one second, enhancing user data analysis capabilities',
         images: ['/images/work/scanner-1.png', '/images/work/scanner-2.png'],
       },
       {
         description:
-          'Engineered a big data pipeline with GCP BigQuery, processing over 500GB of data for strategy backtests via SQL scripts, delivered via API and consumed by a React frontend.',
-        images: ['/images/work/vrp-dashboard-2.png'],
+          'Analyzed user behavior with Heap analytics to identify and resolve friction points in key workflows, leading to a redesigned UI that increased feature adoption by 20%',
       },
       {
         description:
-          'Centralized logging across 10+ data pipelines, aggregating 100,000+ logs and establishing dashboards and an alert system with Grafana, Loki, and Promtail.',
+          'Developed an end-to-end internal analytics dashboard, unifying data from disparate SaaS sources to establish a single source of truth for accurate business KPIs',
+      },
+      {
+        description:
+          'Developed over 10 batch ETL data pipelines using AWS services to populate a MongoDB database, providing the core data for the options analytics platform',
         images: ['/images/work/grafana-logs.png'],
       },
       {
         description:
-          'Automated infographic creation and distribution using React, R, AWS, and Docker, increasing leads by 5% and user engagement by 10%.',
-        images: ['/images/work/earnings-infographic.png'],
+          'Engineered a specialized data pipeline with GCP BigQuery, writing complex SQL transformations to process over 500GB of historical financial data for algorithmic strategy backtesting',
+        images: ['/images/work/vrp-dashboard-2.png'],
       },
       {
         description:
-          'Developed an end-to-end internal company dashboard system, leveraging React for the frontend, an R API, and an R data pipeline deployed on AWS with Docker, to provide trend and live KPI insights from 50,000+ user events.',
-        images: [],
+          'Centralized over 100,000 logs from 10+ AWS data pipelines into a Grafana and Loki stack, reducing daily monitoring time from over 30 minutes to minutes',
+        images: ['/images/work/grafana-logs.png'],
       },
     ],
   },
